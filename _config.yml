@@ -22,11 +22,11 @@ title: Paulo McNally | Web & Mobile Developer
 email: paulomcnally@gmail.com
 description: Web & Mobile Developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.paulomcnally.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-version: 0.0.2
+version: 0.0.3
 
 # Build settings
 theme: minima
