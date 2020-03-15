@@ -32,6 +32,7 @@ version: 0.0.0
 theme: minima
 plugins:
   - jekyll-feed
+  - github-pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
