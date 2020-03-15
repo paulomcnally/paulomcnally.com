@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!--=========== About Us Area ===============-->
+<section id="about" data-scroll-index="1">
+  <div class="about-us-area">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- about-image-->
+        <div class="col-xl-5 col-md-4 col-sm-12 col-xs-12 grid-p-left grid-p-right">
+          <div class="about-image"></div>
+        </div>
+        <!-- about-image-mobile screen-->
+        <div class=" col-sm-12 col-xs-12 d-block d-md-none grid-p-left grid-p-right">
+          <div class="about-image"><img src="/assets/img/about.jpg" alt=""></div>
+        </div>
+        <div class="col-xl-7 col-md-8 col-sm-12 col-xs-12 grid-p-left grid-p-right">
+          <div class="about-content">
+            <!-- about-info-->
+            <div class="personal-info">
+              <h2>- <span>Soy</span> Paulo McNally</h2>
+              <p>Trabajo como Full Stack Developer. En mi tiempo libre hago vlog sobre tecnología y experiencias de vida. Padre de familia. Runner de vez en cuando. Odio la injusticia.</p>
+            </div>
+            <div class="general-info">
+              <!-- about-channel-->
+              <div class="channel-name">
+                <h4>MI CANAL</h4>
+                <h3>Paulo <span>McNally</span></h3>
+                <a href="https://www.youtube.com/c/pauloantoniomcnallyzambrana?sub_confirmation=1" target="_blank">Suscribirse</a>
+              </div>
+              <!-- about-suscribe-->
+              <div class="subscribe">
+                <h4>MIS SEGUIDORES</h4>
+              </div>
+            </div>
+            <div class="count-area" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1000">
+              <div class="row">
+                {% for item in site.data.subscribers %}
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-count-area"> <span class="counter">{{ item.counter }}</span><b>{{ item.unit }}</b>
+                      <p>{{ item.title }}</p>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

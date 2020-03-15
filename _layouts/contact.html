@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<!--=========== Contact Area ===============-->
+<section id="contact" data-scroll-index="5">
+  <div class="contact-area">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- section heading-->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="contact-heading-section">
+            <div class="section-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1000">
+              <h3>CONTACTA <span>CONMIGO</span></h3>
+            </div>
+            <div class="section-description">
+              <p>
+                Te comparto los enlaces a mis redes sociales para que me escribas.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer Social-->
+        <div class="row justify-content-center">
+          <div class="footer-social">
+            <ul>
+              <li>
+                {% for item in site.data.social_networks %}
+                  <a class="footer-socials" style="font-size: 48px;"" href="{{ item.url }}"><i class="fab {{ item.icon }}"></i></a>&nbsp;
+                {% endfor %}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

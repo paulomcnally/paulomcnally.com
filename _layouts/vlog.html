@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<!--=========== Work Area ===============-->
+<section id="work" data-scroll-index="2">
+  <div class="my-work-area">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-heading">
+            <h3>VIDEOS <span>RECIENTES</span></h3>
+          </div>
+        </div>
+      </div>
+
+      {% for items in site.data.vlog %}
+      <div class="row">
+        <div class="dot-list owl-carousel">
+          {% for item in items.list %}
+            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="single-work">
+                <img src="http://i3.ytimg.com/vi/{{ item.id }}/maxresdefault.jpg" alt="">
+                <div class="work-text">
+                  <a href="https://www.youtube.com/watch?v={{ item.id }}" target="_blank">
+                    <p>{{ item.title }}</p>
+                  </a>
+                </div>
+                <div class="play-button">
+                  <a href="https://www.youtube.com/watch?v={{ item.id }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

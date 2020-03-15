@@ -1,0 +1,16 @@
+- list:
+  - title: Adobe Photoshop
+    description: Beginner
+    icon: /assets/img/expertise/adobe_photoshop.svg
+
+  - title: Adobe Illustrator
+    description: Beginner
+    icon: /assets/img/expertise/adobe_illustrator.svg
+
+  - title: Gimp
+    description: Beginner
+    icon: /assets/img/expertise/gimp.png
+
+  - title: Inkscape
+    description: Beginner
+    icon: /assets/img/expertise/inkscape.png

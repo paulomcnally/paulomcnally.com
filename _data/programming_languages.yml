@@ -1,0 +1,33 @@
+- list:
+  - title: JavaScript
+    description: Senior
+    icon: /assets/img/expertise/javascript.svg
+
+  - title: Ruby
+    description: Senior
+    icon: /assets/img/expertise/ruby.svg
+
+  - title: Java
+    description: Skillful
+    icon: /assets/img/expertise/java.svg
+
+  - title: Kotlin
+    description: Skillful
+    icon: /assets/img/expertise/kotlin.svg
+
+- list:
+  - title: PHP
+    description: Skillful
+    icon: /assets/img/expertise/php.svg
+
+  - title: Swift
+    description: Beginner
+    icon: /assets/img/expertise/swift.svg
+
+  - title: Go
+    description: Beginner
+    icon: /assets/img/expertise/go.svg
+
+  - title: Python
+    description: Beginner
+    icon: /assets/img/expertise/python.svg
