@@ -15,25 +15,26 @@ layout: default
       </div>
 
       {% for items in site.data.vlog %}
-      <div class="row">
-        <div class="dot-list owl-carousel">
-          {% for item in items.list %}
-            <div class="col-xl-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="single-work">
-                <img src="http://i3.ytimg.com/vi/{{ item.id }}/hqdefault.jpg" alt="">
-                <div class="work-text">
-                  <a href="https://www.youtube.com/watch?v={{ item.id }}" target="_blank">
-                    <p>{{ item.title }}</p>
-                  </a>
-                </div>
-                <div class="play-button">
-                  <a href="https://www.youtube.com/watch?v={{ item.id }}" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+      <ul class="list-unstyled video-list-thumbs row">
+        {% for item in items.list %}
+
+        <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+          <a
+            href="https://www.youtube.com/watch?v={{ item.id }}"
+            title="{{ item.title }}"
+          >
+            <img
+              src="http://i3.ytimg.com/vi/{{ item.id }}/hqdefault.jpg"
+              alt="{{ item.title }}"
+              class="img-responsive"
+              height="130px"
+            />
+            <h2>{{ item.title }}</h2>
+            <span class="glyphicon glyphicon-play-circle"></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
       {% endfor %}
     </div>
   </div>
